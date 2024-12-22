@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <!-- Fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--My StyleSheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Bootsrap my link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--<link rel="stylesheet" href="files/css/all.min.css" />
+    <link rel="stylesheet" href="files/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="files/css/bootstrap.min.css.map" />-->
+  </head>
+  <body>
+    <!-- header start-->
+    <header class="sticky">
+      <img
+        src="my logo/laziz logo.png"
+        class="logo"
+        alt=""
+        style="width: 100px"
+      />
+      <ul>
+        <li><a href="index.html" class="Active">Home</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="contackt.html">Contackt</a></li>
+        <li><a href="cart.html" style="color: #ffa07a">Cart</a></li>
+      </ul>
+    </header>
+    <section
+      class="welcome-section"
+      style="
+        background: url(header.jpg);
+        background-size: cover;
+        position: relative;
+      "
+    >
+      <div class="overlay"></div>
+      <div class="welcome-content">
+        <h1>Welcome to My Resturant website</h1>
+        <p>
+          Experience the finest flavors and an unforgettable dining atmosphere.
+          Explore our menu filled with delicious dishes made from fresh, locally
+          sourced ingredients.
+        </p>
+        <a href="cart.html" class="menu-button">Explore Our Menu</a>
+      </div>
+    </section>
+    <!--<section class="banner"><p>Order Now</p></section>-->
+    <!-- end header -->
+    <!--Cart Section Satrt-->
+    <div class="untree_co-section before-footer-section">
+      <div class="container">
+        <div class="row mb-5">
+          <form class="col-md-12" method="post">
+            <div class="site-blocks-table">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="product-thumbnail">Image</th>
+                    <th class="product-name">Product</th>
+                    <th class="product-price">Price</th>
+                    <th class="product-quantity">Quantity</th>
+                    <th class="product-total">Total</th>
+                    <th class="product-remove">Remove</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img
+                        src="/img/caesar.jpg"
+                        alt="Image"
+                        class="img-fluid"
+                        style="width: 100px; border-radius: 100px"
+                      />
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black">CAESAR SALAD</h2>
+                    </td>
+                    <td><span>130.00EGY</span></td>
+                    <td>
+                      <div
+                        class="input-group mb-3 d-flex align-items-center quantity-container"
+                        style="max-width: 120px"
+                      >
+                        <div class="input-group-prepend">
+                          <button
+                            class="btn btn-outline-black decrease"
+                            type="button"
+                          >
+                            &minus;
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control text-center quantity-amount"
+                          value="0"
+                          placeholder=""
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            class="btn btn-outline-black increase"
+                            type="button"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span>0</span></td>
+                    <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  </tr>
+
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img
+                        src="/img/food1.png"
+                        alt="Image"
+                        class="img-fluid"
+                      />
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black">LASAL CHEESE</h2>
+                    </td>
+                    <td><span>120.00EGY</span></td>
+                    <td>
+                      <div
+                        class="input-group mb-3 d-flex align-items-center quantity-container"
+                        style="max-width: 120px"
+                      >
+                        <div class="input-group-prepend">
+                          <button
+                            class="btn btn-outline-black decrease"
+                            type="button"
+                          >
+                            &minus;
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control text-center quantity-amount"
+                          value="0"
+                          placeholder=""
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            class="btn btn-outline-black increase"
+                            type="button"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span>0</span></td>
+                    <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img
+                        src="/img/food7.jpeg"
+                        alt="Image"
+                        class="img-fluid"
+                        style="width: 100px; border-radius: 50%;"
+                      />
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black"></h2>
+                    </td>
+                    <td><span>240.00EGY</span></td>
+                    <td>
+                      <div
+                        class="input-group mb-3 d-flex align-items-center quantity-container"
+                        style="max-width: 120px"
+                      >
+                        <div class="input-group-prepend">
+                          <button
+                            class="btn btn-outline-black decrease"
+                            type="button"
+                          >
+                            &minus;
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control text-center quantity-amount"
+                          value="0"
+                          placeholder=""
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            class="btn btn-outline-black increase"
+                            type="button"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span>0</span></td>
+                    <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img
+                        src="/img/food2.png"
+                        alt="Image"
+                        class="img-fluid"
+                      />
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black">CRAB SHRIMP</h2>
+                    </td>
+                    <td><span>310.00EGY</span></td>
+                    <td>
+                      <div
+                        class="input-group mb-3 d-flex align-items-center quantity-container"
+                        style="max-width: 120px"
+                      >
+                        <div class="input-group-prepend">
+                          <button
+                            class="btn btn-outline-black decrease"
+                            type="button"
+                          >
+                            &minus;
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control text-center quantity-amount"
+                          value="0"
+                          placeholder=""
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            class="btn btn-outline-black increase"
+                            type="button"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span>0</span></td>
+                    <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img
+                        src="/img/food3.png"
+                        alt="Image"
+                        class="img-fluid"
+                      />
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black">BEET JUCIE</h2>
+                    </td>
+                    <td><span>55.00EGY</span></td>
+                    <td>
+                      <div
+                        class="input-group mb-3 d-flex align-items-center quantity-container"
+                        style="max-width: 120px"
+                      >
+                        <div class="input-group-prepend">
+                          <button
+                            class="btn btn-outline-black decrease"
+                            type="button"
+                          >
+                            &minus;
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control text-center quantity-amount"
+                          value="0"
+                          placeholder=""
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            class="btn btn-outline-black increase"
+                            type="button"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span>0</span></td>
+                    <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img
+                        src="/img/food4.png"
+                        alt="Image"
+                        class="img-fluid"
+                      />
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black">CAPO STEAK</h2>
+                    </td>
+                    <td><span>320.00EGY</span></td>
+                    <td>
+                      <div
+                        class="input-group mb-3 d-flex align-items-center quantity-container"
+                        style="max-width: 120px"
+                      >
+                        <div class="input-group-prepend">
+                          <button
+                            class="btn btn-outline-black decrease"
+                            type="button"
+                          >
+                            &minus;
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control text-center quantity-amount"
+                          value="0"
+                          placeholder=""
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            class="btn btn-outline-black increase"
+                            type="button"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span>0</span></td>
+                    <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img
+                        src="/img/food5.png"
+                        alt="Image"
+                        class="img-fluid"
+                      />
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black">Mixed donuts</h2>
+                    </td>
+                    <td><span>88.00EGY</span></td>
+                    <td>
+                      <div
+                        class="input-group mb-3 d-flex align-items-center quantity-container"
+                        style="max-width: 120px"
+                      >
+                        <div class="input-group-prepend">
+                          <button
+                            class="btn btn-outline-black decrease"
+                            type="button"
+                          >
+                            &minus;
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control text-center quantity-amount"
+                          value="0"
+                          placeholder=""
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            class="btn btn-outline-black increase"
+                            type="button"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span>0</span></td>
+                    <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  </tr>
+                  <br />
+                  <tr>
+                    <td class="product-thumbnail">
+                      <img
+                        src="/img/food9.jpeg"
+                        alt="Image"
+                        class="img-fluid"
+                        style="width: 100px; border-radius: 50%;"
+                      />
+                    </td>
+                    <td class="product-name">
+                      <h2 class="h5 text-black">Fruit pancakes</h2>
+                    </td>
+                    <td><span>190.00EGY</span></td>
+                    <td>
+                      <div
+                        class="input-group mb-3 d-flex align-items-center quantity-container"
+                        style="max-width: 120px"
+                      >
+                        <div class="input-group-prepend">
+                          <button
+                            class="btn btn-outline-black decrease"
+                            type="button"
+                          >
+                            &minus;
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control text-center quantity-amount"
+                          value="0"
+                          placeholder=""
+                          aria-label="Example text with button addon"
+                          aria-describedby="button-addon1"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            class="btn btn-outline-black increase"
+                            type="button"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span>0</span></td>
+                    <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row mb-5">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <button class="btn btn-black btn-sm btn-block">
+                  Update Cart
+                </button>
+              </div>
+              <div class="col-md-6">
+                <button class="btn btn-outline-black btn-sm btn-block">
+                  Continue Shopping
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label class="text-black h4" for="coupon">Coupon</label>
+                <p>Enter your coupon code if you have one.</p>
+              </div>
+              <div class="col-md-8 mb-3 mb-md-0">
+                <input
+                  type="text"
+                  class="form-control py-3"
+                  id="coupon"
+                  placeholder="Coupon Code"
+                />
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-black">Apply Coupon</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pl-5">
+            <div class="row justify-content-end">
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-md-12 text-right border-bottom mb-5">
+                    <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <span class="text-black">Subtotal</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black">$230.00</strong>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-md-6">
+                    <span class="text-black">Total</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black">$230.00</strong>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <button
+                      class="btn btn-black btn-lg py-3 btn-block"
+                      onclick="window.location='checkout.html'"
+                    >
+                      Proceed To Checkout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Cart Section End-->
+    <!-- footer -->
+    <div class="footer-area" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-box about-widget">
+              <h2 class="widget-title">About us</h2>
+              <p>
+                When a restaurant is popular, you can usually make a reservation
+                to avoid waiting when you get there. This means you’ll have a
+                table waiting for you at a certain time. All you have to do is
+                show up!.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-box get-in-touch">
+              <h2 class="widget-title">Get in Touch</h2>
+              <ul>
+                <li>34/8, East Hukupara, Gifirtok, Sadan.</li>
+                <li>support@fruitkha.com</li>
+                <li>+00 111 222 3333</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-box pages">
+              <h2 class="widget-title">Pages</h2>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Shop</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="contackt.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-box subscribe">
+              <h2 class="widget-title">Subscribe</h2>
+              <p>Subscribe to our mailing list to get the latest updates.</p>
+              <form action="index.html">
+                <input type="email" placeholder="Email" />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+    <script src="cart.js"></script>
+    <!--Bootstrap javascript cdn link-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
